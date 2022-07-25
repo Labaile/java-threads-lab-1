@@ -14,15 +14,20 @@ public class Main {
 
         RangeAdder adder1 = new RangeAdder(start1, end1);
         adder1.start();
+        System.out.println("Adder1 ID: " + adder1.getId());
 
         RangeAdder adder2 = new RangeAdder(start2, end2);
         adder2.start();
+        System.out.println("Adder2 ID: " + adder2.getId());
 
         long partialSum1 = adder1.getSum();
+
         long partialSum2 = adder2.getSum();
 
         long sum = partialSum1 + partialSum2;
 
+        //System.out.println("P1: " + partialSum1);
+        //System.out.println("P2: " + partialSum2);
         System.out.println("Sum: " + sum);
 
         scanner.close();
